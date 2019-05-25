@@ -1,0 +1,12 @@
+<form class="form" [formGroup]="formSendFile" (ngSubmit)="sendFile()">
+  <h1 class="title">Add file</h1>
+  <div class="input_file">
+    <input class="input_file--none" type="file" formControlName="file">
+  </div>
+  <label class="caption_block">
+      <input class="caption_element" type="checkbox" formControlName="caption">
+    <span class="title text">Do caption</span>
+  </label>
+  <button class="btn--submit" type="submit">Send</button>
+
+</form>

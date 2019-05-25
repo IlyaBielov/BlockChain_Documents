@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+//@import '~normalize-scss/sass/_normalize.scss';
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+// @import url('https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css');
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
