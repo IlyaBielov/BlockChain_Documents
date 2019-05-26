@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FormForAddFileComponent } from './form-for-add-file/form-for-add-file.component';
-import {ReactiveFormsModule} from '@angular/forms';
 import { NgxPrettyCheckboxModule } from 'ngx-pretty-checkbox';
 import { DataPageComponent } from './data-page/data-page.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -24,8 +25,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
+    HttpClientModule,
     NgxPrettyCheckboxModule,
+    FormsModule,
     RouterModule,
     RouterModule.forRoot(routes)
   ],
