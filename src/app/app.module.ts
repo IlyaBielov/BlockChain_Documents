@@ -7,18 +7,20 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { NgxPrettyCheckboxModule } from 'ngx-pretty-checkbox';
 import { DataPageComponent } from './data-page/data-page.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: 'data', component: DataPageComponent },
   { path: '', component: FormForAddFileComponent },
-  { path: '**', component: AppComponent }
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     FormForAddFileComponent,
-    DataPageComponent
+    DataPageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
