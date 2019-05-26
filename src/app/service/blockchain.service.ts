@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams, HttpResponse } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class BlockchainService {
-  protected apiUrl = "http://fb09785f.ngrok.io";
+  protected apiUrl = environment.apiUrl;
   data: string;
 
   constructor(private http: HttpClient) {

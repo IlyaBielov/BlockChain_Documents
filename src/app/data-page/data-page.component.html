@@ -1,5 +1,13 @@
-<div class="data_user">
-  <h1 class="title">My data key</h1>
-  <p class="text text--center">{{data.id}}</p>
-  <p class="text text--center">{{data.object}}</p>
+<div class="data-user">
+  <div class="wrapper">
+    <h1 class="data-user__title">My data key</h1>
+    <input type="data-user__text" [(ngModel)]="hash">
+    <button class="data-user__button" (click)="send()">click</button>
+    <ng-container *ngIf="!form">
+      <p class="data-user__hash">{{dataHash}}</p>
+      <p class="data-user__object">Object from BlockChain</p>
+      <p class="data-user__pointer">\/</p>
+      <p class="data-user__data">{{data}}</p>
+    </ng-container>
+  </div>
 </div>

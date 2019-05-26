@@ -1,4 +1,73 @@
 @import "/../../styles";
-.data_user {
+.data-user {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
 
+  .data-user__title {
+    margin: 20px 0;
+    font-size: 64px;
+    color: $textColor;
+    letter-spacing: 4px;
+    font-family: $font;
+  }
+
+  input {
+    border: none;
+    color: darken($textColor, $amount: 0.5);
+    font-family: $font;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 32px;
+    letter-spacing: 1.2px;
+    background-color: rgba($color: #FFF, $alpha: .1);
+  }
+
+  button {
+    font-size: 24px;
+    background-color: $btnColor;
+    color: $textColor;
+    font-family: $font;
+    letter-spacing: 2px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+    cursor: pointer;
+    &:hover {
+      background-color: $colorElements;
+      color: $btnColor;
+    }
+    &:active {
+      background-color: $btnHover;
+    }
+  }
+
+  .data-user__hash {
+    font-size: 24px;
+    color: $textColor;
+  }
+  .data-user__data {
+    margin-top: 5px; 
+    font-size: 24px;
+    color: $textColor;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .data-user__pointer {
+    margin-top: 0px; 
+    font-size: 24px;
+    color: $textColor;
+    font-weight: 700;
+  }
+
+  .data-user__object {
+    margin-bottom: 0px; 
+    font-size: 36px;
+    color: $textColor;
+  }
 }
+
