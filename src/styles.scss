@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+//@import '~normalize-scss/sass/_normalize.scss';
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+// @import url('https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css');
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+body {
+  background: linear-gradient(111deg, #ed6363, #3c6562, #00454a, #00454a, #3c6562, #ed6363);
+  background-size: 1200% 1200%;
+
+  -webkit-animation: gradientForApp 13s ease infinite;
+  -moz-animation: gradientForApp 13s ease infinite;
+  -o-animation: gradientForApp 13s ease infinite;
+  animation: gradientForApp 13s ease infinite;
+
+  @-webkit-keyframes gradientForApp {
+    0%{background-position:7% 0%}
+    50%{background-position:94% 100%}
+    100%{background-position:7% 0%}
+  }
+  @-moz-keyframes gradientForApp {
+    0%{background-position:7% 0%}
+    50%{background-position:94% 100%}
+    100%{background-position:7% 0%}
+  }
+  @-o-keyframes gradientForApp {
+    0%{background-position:7% 0%}
+    50%{background-position:94% 100%}
+    100%{background-position:7% 0%}
+  }
+  @keyframes gradientForApp {
+    0%{background-position:7% 0%}
+    50%{background-position:94% 100%}
+    100%{background-position:7% 0%}
+  }
+}
