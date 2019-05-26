@@ -5,15 +5,21 @@ $btnColor: #00454a;
 $btnHover: #3c6562;
 $font: 'Questrial', sans-serif;
 
+.form__container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
 .form {
   margin: auto;
-  width: 100vw;
-  height: 100vh;
+  width: 50vw;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $colorBackground;
+  //background-color: $colorBackground;
 }
 
 .title {
@@ -28,19 +34,27 @@ $font: 'Questrial', sans-serif;
   font-size: 30px;
 }
 
+.text--center {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 16%;
+}
+
 .input_file--none {
+  position: absolute;
   opacity: 0;
   width: 100%;
   height: 100%;
 }
 
 .input_file {
-  width: 30%;
+  width: 60%;
+  height: 50%;
   color: $textColor;
-  height: 20%;
+  position: relative;
   margin-top: 25px;
   margin-bottom: 25px;
-  padding: 10px;
   -webkit-border-radius: 5px;
   border-color: $colorElements;
   border-style:dashed;

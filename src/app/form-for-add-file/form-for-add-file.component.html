@@ -1,12 +1,15 @@
-<form class="form" [formGroup]="formSendFile" (ngSubmit)="sendFile()">
-  <h1 class="title">Add file</h1>
-  <div class="input_file">
-    <input class="input_file--none" type="file" formControlName="file">
+<form class="form__container" [formGroup]="formSendFile" (ngSubmit)="sendFile()">
+  <div class="form">
+    <h1 class="title">Add file</h1>
+    <div class="input_file">
+      <span class="title text text--center">{{file ? file.name : 'drag and drop file here' }}</span>
+      <input id="file" #fileInput  (change)="processFile(fileInput)" class="input_file--none" type="file">
+    </div>
+    <label class="caption_block">
+        <input class="caption_element" type="checkbox" formControlName="caption">
+      <span class="title text">Do caption</span>
+    </label>
+    <button class="btn--submit" type="submit">Send</button>
   </div>
-  <label class="caption_block">
-      <input class="caption_element" type="checkbox" formControlName="caption">
-    <span class="title text">Do caption</span>
-  </label>
-  <button class="btn--submit" type="submit">Send</button>
 
 </form>
