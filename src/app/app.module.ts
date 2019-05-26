@@ -5,17 +5,27 @@ import { AppComponent } from './app.component';
 import { FormForAddFileComponent } from './form-for-add-file/form-for-add-file.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { NgxPrettyCheckboxModule } from 'ngx-pretty-checkbox';
+import { DataPageComponent } from './data-page/data-page.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const routes: Routes = [
+  { path: 'data', component: DataPageComponent },
+  { path: '', component: FormForAddFileComponent },
+  { path: '**', component: AppComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormForAddFileComponent
+    FormForAddFileComponent,
+    DataPageComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    NgxPrettyCheckboxModule
+    NgxPrettyCheckboxModule,
+    RouterModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
