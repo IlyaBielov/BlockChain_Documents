@@ -1,9 +1,4 @@
-$textColor: #ed6363;
-$colorBackground: #003545;
-$colorElements: #ed6363;
-$btnColor: #00454a;
-$btnHover: #3c6562;
-$font: 'Questrial', sans-serif;
+@import "/../../styles";
 
 .form__container {
   height: 100vh;
@@ -20,25 +15,6 @@ $font: 'Questrial', sans-serif;
   justify-content: center;
   align-items: center;
   //background-color: $colorBackground;
-}
-
-.title {
-  margin: 0;
-  font-size: 40px;
-  color: $textColor;
-  letter-spacing: 4px;
-  font-family: $font;
-}
-
-.text {
-  font-size: 30px;
-}
-
-.text--center {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  margin-top: 16%;
 }
 
 .input_file--none {
